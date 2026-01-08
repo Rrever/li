@@ -29,10 +29,10 @@ case $choice in
 	4)
 	#Check for divison by zero
 	if ["$num2"=="0"];then
-	echo"Error: Divison by zero is not allowed."
+	echo "Error: Divison by zero is not allowed."
 	else 
-	   result=$(echo"scale;$num1 / $num2"|bc)
-	   echo "result:result"
+	   result=$((num1 / num2))
+	   echo "result : $result"
 	   fi
 	   ;;
 	5)
