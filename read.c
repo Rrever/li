@@ -41,7 +41,7 @@ int main()
     }
 
     // Check if reading from the source file was successful
-    if (bytes_read - 1)
+    if (bytes_read == -1)
     {
         perror("Error reading from source file");
     }
